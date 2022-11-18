@@ -10,7 +10,7 @@ node {
     stage('Build image') {
         /* This builds the actual image */
 
-        app = sudo docker.build("hema/nodeapp")
+        app =docker.build("hema/nodeapp")
     }
 
     stage('Test image') {
